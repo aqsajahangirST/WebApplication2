@@ -1,0 +1,65 @@
+﻿@using Microsoft.AspNetCore.Http.Features
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Authentication;
+@using Microsoft.AspNetCore.Authentication.Cookies;
+@using Microsoft.AspNetCore.Authorization;
+
+@inject IHttpContextAccessor hca
+@inject IJSRuntime JSRuntime
+
+
+@if (showBanner)
+{
+<div class="is-fixed is-bottom-0 is-left-0 is-right-0 has-background-grey p-16" style="z-index: 50;">
+    <div class="container mb-8">
+       
+        <div class="has-mw-xl">
+            <h4 class="title is-size-4 mb-8">Cookies settings</h4>
+            <p class="has-text-white mb-10">By clicking Accept, you agree to the storing of cookies on your device to enhance site navigation. Etiam commodo ipsum et imperdiet imperdiet. Fusce pellentesque, lacus.</p>
+            <br />
+            <div class="buttons">
+                <a class="button is-ghost" href="#">
+                    <span class="mr-2">More</span>
+                    <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.0871 7.41489L19.3999 14.102L18.564 13.2661L24.2439 7.58625L0.592385 7.59043L0.592385 6.41183L24.2439 6.40765L18.982 1.14571L19.8179 0.309822L26.0871 6.579C26.3179 6.80984 26.3179 7.18406 26.0871 7.41489Z" fill="currentColor"></path>
+                    </svg>
+                </a>
+                <a class="button is-warning" @onclick="@Dismiss" href="/">Accept</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    @code {
+        ITrackingConsentFeature consentFeature;
+        bool showBanner;
+        string cookieString;
+
+        protected override void OnInitialized()
+        {
+            consentFeature = hca.HttpContext.Features.Get<ITrackingConsentFeature>();
+            showBanner = !consentFeature?.CanTrack ?? false;
+            cookieString = consentFeature?.CreateConsentCookie();
+
+        }
+
+        private void AcceptMessage()
+        {
+            JSRuntime.InvokeVoidAsync(
+                "netLearnerJsFunctions.acceptMessage",
+                cookieString);
+        }
+
+        private void Dismiss()
+        {
+            showBanner = false;
+        }
+
+        protected override async Task OnInitializedAsync()
+        {
+            await Task.FromResult(2000);
+            showBanner = true;
+
+        }
+    }
+}

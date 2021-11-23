@@ -1,0 +1,620 @@
+﻿@inherits LayoutComponentBase
+
+
+
+<div class="main">
+    <nav class="navbar py-4">
+        <div class="container">
+            <div class="navbar-brand">
+
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item " href="/">Home</a>
+                    <a class="navbar-item " href="/counter">Counter</a>
+                    <a class="navbar-item " href="fetchdata">Fetch Data</a>
+                    <a class="navbar-item " href="/contactus">Contact Us</a>
+                    <a class="navbar-item " href="/form">Form</a>
+                    <a class="navbar-item " href="/comingsoon">Component</a>
+                    <a class="navbar-item " href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+                </div>
+                <div class="navbar-item">
+                    <div class="field has-addons">
+                        <div class="control">
+                            <input class="input" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                        <div class="control">
+                            <button class="button" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 24px;height: 24px">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <br />
+    <br />
+
+    <WebApplication2.Pages.CookieComponent/>
+    
+    <div class="content px-4">
+        @Body
+
+       
+    </div>
+    <br />
+    <br />
+    
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer class="footer pb-0 pl-0 pr-0 m-1">
+      
+           @* <div class="is-relative">
+                <div class="is-absolute is-hidden-touch column is-6-desktop is-right ml-auto has-background-white-bis" style="top: 0; bottom: 0;"></div>
+                <div class="section is-relative">
+                    <div class="columns is-multiline">
+                        <div class="column is-12 is-4-desktop is-offset-1-desktop">
+                            <div class="has-text-centered has-text-left-desktop">
+                                <a href="#">
+                                    <img class="mb-6" src="https://api-media.selltime.com/Uploads/Media_3/Assets20200102000415/gambit-logo_20200102000442.png" alt="" width="106">
+                                </a>
+                                <div class="mb-6">
+                                    <p class="subitlte mb-4">Subscribe and stay fully connected with product.</p>
+                                    <div class="field is-grouped is-max-w-sm mx-auto">
+                                        <div class="control is-expanded has-icons-left">
+                                            <span class="icon is-left">
+                                                <svg class="image is-24x24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                                </svg>
+                                            </span>
+                                            <input class="input" type="text" placeholder="Type your e-mail">
+                                        </div>
+                                        <div class="control">
+                                            <button class="button is-primary" type="submit">Sign Up</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="is-hidden-touch">
+                                    <p class="subtitle">© 2020. All rights reserved.</p>
+                                    <div>
+                                        <a href="#">
+                                            <img src="https://img.icons8.com/material-sharp/24/000000/facebook-new.png" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="https://img.icons8.com/material-rounded/24/000000/twitter.png" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>*@
+       
+                       @* <div class="py-6 column is-12 is-6-desktop is-offset-1-desktop has-background-white-bis">
+                            <div class="columns is-centered">
+                                <div class="column is-3 mb-3 has-text-centered-touch">
+                                    <h5 class="title is-size-5 is-spaced mb-4">Store</h5>
+                                    <ul class="is-size-5">
+                                        <li><a class="subtitle" href="/">Home</a></li>
+                                        <li><a class="subtitle" href="/contactus">Contact Us</a></li>
+                                        <li><a class="subtitle" href="#">Services</a></li>
+                                        <li><a class="subtitle" href="#">Blog</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column is-3 mb-3 has-text-centered-touch">
+                                    <h5 class="title is-size-5 is-spaced mb-4">About</h5>
+                                    <ul class="is-size-5">
+                                        <li><a class="subtitle" href="#">Counter</a></li>
+                                        <li><a class="subtitle" href="#">Posts</a></li>
+                                        <li><a class="subtitle" href="#">Login</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column is-3 mb-3 has-text-centered-touch">
+                                    <h5 class="title is-size-5 is-spaced mb-4">Catalog</h5>
+                                    <ul class="is-size-5">
+                                        <li><a class="subtitle" href="#">Register</a></li>
+                                        <li><a class="subtitle" href="#">Enquiry</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="is-hidden-desktop has-text-centered mt-6">
+                        <p class="subtitle mb-4">© 2020. All rights reserved.</p>
+                        <div>
+                            <a href="#">
+                                <img src="https://img.icons8.com/material-sharp/24/000000/facebook-new.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="https://img.icons8.com/material-rounded/24/000000/twitter.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+
+        @*<section class="section">
+                <div class="container">
+                    <div class="columns is-centered is-vcentered">
+                        <div class="column is-2 has-text-centered-mobile">
+                            <a href="#">
+                                <img src="https://api-media.selltime.com/Uploads/Media_3/Assets20200102000415/gambit-logo_20200102000442.png" alt="" width="106">
+                            </a>
+                        </div>
+                        <div class="column is-6">
+                            <ul class="is-flex is-justify-content-space-around">
+                                <li><a class="title is-size-5" href="#">Shop</a></li>
+                                <li><a class="title is-size-5" href="#">About</a></li>
+                                <li><a class="title is-size-5" href="#">Blog</a></li>
+                                <li><a class="title is-size-5" href="#">Pricing</a></li>
+                            </ul>
+                        </div>
+                        <div class="column is-4 has-text-centered has-text-right-tablet"><a class="button is-warning" href="#">Contact us</a></div>
+                    </div>
+                </div>
+            </section>*@
+
+
+        @* <section class="section">
+                <div class="container">
+                    <div class="columns is-multiline is-vcentered">
+                        <div class="column is-6 has-text-centered has-text-left-tablet">
+                            <a href="#">
+                                <img src="https://api-media.selltime.com/Uploads/Media_3/Assets20200102000415/gambit-logo_20200102000442.png" alt="" width="106">
+                            </a>
+                        </div>
+                        <div class="column is-5 is-offset-1 mb-3">
+                            <ul class="is-flex is-justify-content-space-between">
+                                <li><a class="title is-size-5" href="#">Shop</a></li>
+                                <li><a class="title is-size-5" href="#">About</a></li>
+                                <li><a class="title is-size-5" href="#">Blog</a></li>
+                                <li><a class="title is-size-5" href="#">Pricing</a></li>
+                            </ul>
+                        </div>
+                        <div class="column is-12 is-flex is-justify-content-space-between">
+                            <p>© 2020. All rights reserved.</p>
+                            <div>
+                                <a class="mr-2" href="/faceboob">
+                                    <img src="https://img.icons8.com/material-sharp/24/000000/facebook-new.png" alt="">
+                                </a>
+                                <a class="mr-2" href="/instagram">
+                                    <img src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png" alt="">
+                                </a>
+                                <a class="mr-2" href="/twitter">
+                                    <img src="https://img.icons8.com/material-rounded/24/000000/twitter.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>*@
+
+        @* <section class="section py-20 has-background-grey">
+                <div class="container">
+                    <div class="columns mb-0">
+                        <div class="column is-4 mb-12 mb-0-tablet mb-20-tablet">
+                            <a class="is-block mb-4 title is-size-4 has-text-white" href="#">
+                                <img src="https://api-media.selltime.com/Uploads/Media_3/Assets20200102000415/gambit-logo_20200102000442.png" alt="" width="auto">
+                            </a>
+                            <p class="title is-size-6 has-text-white" style="opacity: 0.5;">2021 © Selltime</p>
+                            <ul class="is-flex">
+                                <li><a class="title is-size-6 has-text-white" href="#">Terms & </a></li>
+                                <li class="ml-9"><a class="title is-size-6 has-text-white" href="#"> Privacy</a></li>
+                            </ul>
+                        </div>
+                        <div class="column is-8">
+                            <div class="columns">
+                                <div class="column is-4 mb-4 mb-0-tablet">
+                                    <h5 class="title is-size-5 has-text-white has-text-weight-medium">Contact</h5>
+                                    <ul class="mb-4">
+                                        <li class="mb-2">
+                                            <a class="title is-size-6 is-flex is-align-items-center has-text-white" href="#">
+                                                <img src="https://img.icons8.com/material-sharp/24/000000/phone.png" />
+                                                <span>+44 20 6024 2068</span>
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                            <a class="title is-size-6 is-flex is-align-items-center has-text-white" href="#">
+                                                <img src=" https://img.icons8.com/material-sharp/24/000000/mail.png" />
+                                                <span>office@neonic.co</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="has-text-white">
+                                        <li style="opacity: 0.6;"><small>Neonic Ltd</small></li>
+                                        <li style="opacity: 0.6;"><small>Mokotowska 64</small></li>
+                                        <li style="opacity: 0.6;"><small>01-357 Warsaw</small></li>
+                                    </ul>
+                                </div>
+                                <div class="column is-4 mb-4 mb-0-tablet">
+                                    <h5 class="mb-8 title is-size-5 has-text-white">Pages</h5>
+                                    <ul>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="/">About</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="/contactus">Contact Uss</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="/form">Register</a></li>
+                                        <li><a class="title is-size-6 has-text-white" href="#">Services</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column is-4">
+                                    <h5 class="mb-8 title is-size-5 has-text-white">Follow us</h5>
+                                    <ul class="is-flex">
+                                        <li>
+                                            <a href="#">
+                                                <img src="https://img.icons8.com/material-sharp/24/000000/facebook-new.png" />
+                                            </a>
+                                        </li>
+                                        <li class="ml-2">
+                                            <a href="#">
+                                                <img src="https://img.icons8.com/material-rounded/24/000000/twitter.png" />
+                                            </a>
+                                        </li>
+                                        <li class="ml-2">
+                                            <a href="#">
+                                                <img src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png" />
+                                            </a>
+                                        </li>
+                                        <li class="ml-2">
+                                            <a href="#">
+                                                <img src="https://img.icons8.com/material-rounded/24/000000/linkedin--v1.png" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>*@
+
+        @*<section class="section pt-20 pb-0 has-background-grey">
+                <div class="container">
+                    <div class="columns mb-0" style="border-bottom: 1px solid rgba(255,255,255,0.15)">
+                        <div class="column is-4 mb-12 mb-0-tablet mb-20-tablet">
+                            <a class="is-block mb-4 title is-size-4 has-text-white" href="#">
+                                <img src="https://api-media.selltime.com/Uploads/Media_3/Assets20200102000415/gambit-logo_20200102000442.png" alt="" width="auto">
+                            </a>
+                            <ul class="mb-8">
+                                <li class="mb-2">
+                                    <a class="title is-size-6 is-flex is-align-items-center has-text-white" href="#">
+                                        <img class="mr-3" src="https://img.icons8.com/material-sharp/24/000000/phone.png" alt="">
+                                        <span>+44 20 6024 2068</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="title is-size-6 is-flex is-align-items-center has-text-white" href="#">
+                                        <img class="mr-3" src="https://img.icons8.com/material-sharp/24/000000/mail.png" alt="">
+                                        <span>office@neonic.co</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="is-flex">
+                                <li>
+                                    <a href="#">
+                                        <img src="https://img.icons8.com/material-sharp/24/000000/facebook-new.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="ml-2">
+                                    <a href="#">
+                                        <img src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="ml-2">
+                                    <a href="#">
+                                        <img src="https://img.icons8.com/material-rounded/24/000000/twitter.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="ml-2">
+                                    <a href="#">
+                                        <img src="https://img.icons8.com/material-rounded/24/000000/linkedin--v1.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="ml-2">
+                                    <a href="#">
+                                        <img src="acros-assets/logo/linkedin.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="column is-8">
+                            <div class="columns">
+                                <div class="column is-3 mb-4 mb-0-tablet">
+                                    <h5 class="mb-8 title is-size-5 has-text-white">Pages</h5>
+                                    <ul>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="#">About us</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="#">Careers</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="#">Press</a></li>
+                                        <li><a class="title is-size-6 has-text-white" href="#">Blog</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column is-3 mb-4 mb-0-tablet">
+                                    <h5 class="mb-8 title is-size-5 has-text-white">Pricing</h5>
+                                    <ul>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="#">Login</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="#">Register</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="#">Add list</a></li>
+                                        <li><a class="title is-size-6 has-text-white" href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column is-3 mb-4 mb-0-tablet">
+                                    <h5 class="mb-8 title is-size-5 has-text-white">Resources</h5>
+                                    <ul>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white">Blog</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white">Service</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white">Product</a></li>
+                                        <li><a class="title is-size-6 has-text-white" href="#">Pricing</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column is-3 mb-4 mb-0-tablet">
+                                    <h5 class="mb-8 title is-size-5 has-text-white">Legal</h5>
+                                    <ul>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="#">Terms</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="#">About us</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="#">Team</a></li>
+                                        <li><a class="title is-size-6 has-text-white" href="#">Privacy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="is-flex is-justify-content-space-between py-10">
+                        <p class="mb-0 title is-size-6 has-text-white">2021 © Selltime</p>
+
+                    </div>
+                </div>
+            </section>*@
+
+        @* <section class="section py-20 has-background-grey">
+                <div class="container">
+                    <div class="columns mb-0">
+                        <div class="column is-3 is-flex-tablet is-flex-direction-column mb-12 is-justify-content-space-between mb-0-tablet">
+                            <div>
+                                <a class="is-block mb-4 title is-size-4 has-text-white" href="#">
+                                    <img src="https://api-media.selltime.com/Uploads/Media_3/Assets20200102000415/gambit-logo_20200102000442.png" alt="" width="auto">
+                                </a>
+                            </div>
+                            <div>
+                                <p class="title is-size-6 has-text-white" style="opacity: 0.5;">2021 © Selltime</p>
+                                <ul class="is-flex">
+                                    <li><a class="title is-size-6 has-text-white" href="#">Terms</a></li>
+                                    <li class="ml-9"><a class="title is-size-6 has-text-white" href="#">Privacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column is-9">
+                            <div class="columns">
+                                <div class="column is-3 mb-4 mb-0-tablet">
+                                    <ul>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="#">About us</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="#">Careers</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="#">Press</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="#">Blog</a></li>
+                                        <li><a class="title is-size-6 has-text-white" href="#">Service</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column is-3 mb-4 mb-0-tablet">
+                                    <ul>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="#">Pricing</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="#">Login</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="#">Register</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-white" href="#">Add list</a></li>
+                                        <li><a class="title is-size-6 has-text-white" href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column is-6">
+                                    <h5 class="title is-size-5 has-text-white has-mw-md pr-12 has-text-weight-medium">Expand your brand with this excellent extension tool</h5>
+                                    <div class="is-flex mb-1">
+                                        <div class="field" style="width: 100%;">
+                                            <div class="control">
+                                                <input class="input is-light" type="text" placeholder="Type of your email">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="control"><a class="button is-warning ml-4" href="#">Sign up</a></div>
+                                        </div>
+                                    </div>
+                                    <p class="has-text-white has-mw-md pr-28" style="opacity: 0.75;"><small>If you have ever wondered how to develop your brand, this is the place for you.</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>*@
+
+        @*<section class="section py-20">
+                <div class="container">
+                    <div class="columns mb-0">
+                        <div class="column is-3 is-flex-tablet is-flex-direction-column mb-12 is-justify-content-space-between mb-0-tablet">
+                            <div>
+                                <a class="is-block mb-4 title is-size-4 has-text-dark" href="#">
+                                    <img src="https://api-media.selltime.com/Uploads/Media_3/Assets20200102000415/gambit-logo_20200102000442.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <p class="title is-size-6 has-text-grey-darker" style="opacity: 0.5;">2021 © Selltime</p>
+                                <ul class="is-flex">
+                                    <li><a class="title is-size-6 has-text-grey-darker" href="#">Terms</a></li>
+                                    <li class="ml-9"><a class="title is-size-6 has-text-grey-darker" href="#">Privacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column is-9">
+                            <div class="columns">
+                                <div class="column is-3 mb-4 mb-0-tablet">
+                                    <ul>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-grey-darker" href="#">About us</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-grey-darker" href="#">Careers</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-grey-darker" href="#">Press</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-grey-darker" href="#">Blog</a></li>
+                                        <li><a class="title is-size-6 has-text-grey-darker" href="#">Service</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column is-3 mb-4 mb-0-tablet">
+                                    <ul>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-grey-darker" href="#">Pricing</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-grey-darker" href="#">Login</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-grey-darker" href="#">Register</a></li>
+                                        <li class="mb-6"><a class="title is-size-6 has-text-grey-darker" href="#">Add list</a></li>
+                                        <li><a class="title is-size-6 has-text-grey-darker" href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column is-6">
+                                    <h5 class="title is-size-5 has-text-grey-darker has-mw-md pr-12 has-text-weight-medium">Expand your brand with this excellent extension tool</h5>
+                                    <div class="is-flex mb-1">
+                                        <div class="field" style="width: 100%;">
+                                            <div class="control">
+                                                <input class="input" type="text" placeholder="Type your e-mail">
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="control"><a class="button is-primary ml-4" href="#">Sign up</a></div>
+                                        </div>
+                                    </div>
+                                    <p class="has-text-grey-light has-mw-md pr-28" style="opacity: 0.75;"><small>If you have ever wondered how to develop your brand, this is the place for you.</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>*@
+    </footer>
+
+   @* <footer class="section">
+            <div class="container pb-5 has-text-centered">
+                <a class="mx-auto mb-4 is-inline-block" href="#">
+                    <img class="image" src="https://api-media.selltime.com/Uploads/Media_3/Assets20200102000415/gambit-logo_20200102000442.png" alt="" width="96px">
+                </a>
+                <ul class="mb-4 is-flex is-flex-wrap-wrap is-justify-content-center is-align-items-center">
+                    <li><a class="button is-white" href="/">About</a></li>
+                    <li><a class="button is-white" href="/contactus">Contact Us</a></li>
+                    <li><a class="button is-white" href="/form">Services</a></li>
+                    <li><a class="button is-white" href="#">Home</a></li>
+                </ul>
+                <div>
+                    <a class="mr-4 is-inline-block" href="#">
+                        <img src="https://img.icons8.com/material-sharp/24/000000/facebook-new.png">
+                    </a>
+                    <a class="mr-4 is-inline-block" href="#">
+                        <img src="https://img.icons8.com/material-rounded/24/000000/twitter.png">
+                    </a>
+                    <a class="mr-4 is-inline-block" href="#">
+                        <img src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png">
+                    </a>
+                    <a class="mr-4 is-inline-block" href="#">
+                        <img src="https://img.icons8.com/material-rounded/24/000000/linkedin--v1.png">
+                    </a>
+
+                </div>
+            </div>
+            <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
+            <div class="container">
+                <p class="has-text-centered">All rights reserved © Selltime 2021</p>
+            </div>
+        </footer>
+    </div>*@
+        
+    <footer class="section">
+        <div class="container">
+            <div class="pb-5 columns is-multiline">
+                <div class="column is-8">
+                    <div class="columns is-multiline">
+                        <div class="column is-6 is-3-desktop mb-4">
+                            <h3 class="mb-5 is-size-5 has-text-weight-bold">Company</h3>
+                            <ul>
+                                <li class="mb-2"><a class="button is-white" href="#">About Us</a></li>
+                                <li class="mb-2"><a class="button is-white" href="#">Careers</a></li>
+                                <li class="mb-2"><a class="button is-white" href="#">Press</a></li>
+                                <li><a class="button is-white" href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="column is-6 is-3-desktop mb-4">
+                            <h3 class="mb-4 is-size-5 has-text-weight-bold">Pages</h3>
+                            <ul>
+                                <li class="mb-2"><a class="button is-white" href="#">Login</a></li>
+                                <li class="mb-2"><a class="button is-white" href="#">Register</a></li>
+                                <li class="mb-2"><a class="button is-white" href="#">Add list</a></li>
+                                <li><a class="button is-white" href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="column is-6 is-3-desktop mb-4">
+                            <h3 class="mb-4 is-size-5 has-text-weight-bold">Legal</h3>
+                            <ul>
+                                <li class="mb-2"><a class="button is-white" href="#">Terms</a></li>
+                                <li class="mb-2"><a class="button is-white" href="#">About Us</a></li>
+                                <li class="mb-2"><a class="button is-white" href="#">Team</a></li>
+                                <li><a class="button is-white" href="#">Privacy</a></li>
+                            </ul>
+                        </div>
+                        <div class="column is-6 is-3-desktop mb-4">
+                            <h3 class="mb-4 is-size-5 has-text-weight-bold">Resources</h3>
+                            <ul>
+                                <li class="mb-2"><a class="button is-white" href="#">Blog</a></li>
+                                <li class="mb-2"><a class="button is-white" href="#">Service</a></li>
+                                <li class="mb-2"><a class="button is-white" href="#">Product</a></li>
+                                <li><a class="button is-white" href="#">Pricing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <h3 class="mb-4 is-size-5 has-text-weight-bold">Subscribe</h3>
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="is-flex">
+                        <div class="control mr-2">
+                            <input class="input mr-2" type="email" placeholder="Type your e-mail">
+                        </div>
+                        <button class="button is-warning is-inline-block">Action</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-5" style="border-top: 1px solid #dee2e6;">
+            <div class="is-vcentered columns is-multiline">
+                <div class="column is-6">
+                    <a class="is-inline-block" href="#">
+                        <img class="image" src="https://api-media.selltime.com/Uploads/Media_3/Assets20200102000415/gambit-logo_20200102000442.png" alt="" width="96px">
+                    </a>
+                    <div class="py-4 is-hidden-mobile"></div>
+                    <p class="is-block-desktop is-hidden-touch">All rights reserved © Selltime 2021</p>
+                </div>
+                <div class="column is-6">
+                    <div class="is-flex">
+                        <a class="ml-auto mr-4 is-inline-block" href="#">
+                            <img src="https://img.icons8.com/material-sharp/24/000000/facebook-new.png" alt="">
+                        </a>
+                        <a class="mr-4 is-inline-block" href="#">
+                            <img src="https://img.icons8.com/material-rounded/24/000000/twitter.png" alt="">
+                        </a>
+                        <a class="mr-4 is-inline-block" href="#">
+                            <img src="https://img.icons8.com/material-rounded/24/000000/linkedin--v1.png" alt="">
+                        </a>
+                        <a class="mr-4 is-inline-block" href="#">
+                            <img src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png" alt="">
+                        </a>
+                        <a class="is-inline-block" href="#">
+                            <img src="bulma-plain-assets/socials/linkedin.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <p class="mt-4 is-hidden-widescreen">All rights reserved © Wireframes Corporation 2021</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
